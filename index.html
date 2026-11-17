@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de estágio do Sistema Bordezan.">
+  <title>Portfólio | Sistema Bordezan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Sistema Bordezan - início">
+      <span class="brand-logo-wrap">
+        <img class="brand-logo" src="assets/logo.png" alt="Logo do Sistema Bordezan">
+        <span class="brand-mark">B</span>
+      </span>
+      <span><strong>Sistema Bordezan</strong><small>Portfólio de estágio</small></span>
+    </a>
+    <nav aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#casos">Casos de uso</a>
+      <a href="#documentacao">Documentação</a>
+      <a href="#evidencias">Telas e vídeo</a>
+      <a href="#relatorio">Relatório</a>
+      <a href="#identificacao">Aluno</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow">PORTFÓLIO DE PROJETO DE ESTÁGIO</span>
+        <h1>Sistema <span>Bordezan</span></h1>
+        <p class="hero-lead">Uma aplicação web para organizar e apoiar a gestão dos processos internos da Panificadora Bordezan.</p>
+        <p>O projeto reúne funcionalidades de controle de estoque, produtos, matérias-primas, fichas técnicas, fornecedores, encomendas e produção em um único sistema.</p>
+        <a class="button" href="#sobre">Conheça o projeto <span aria-hidden="true">↓</span></a>
+      </div>
+      <aside class="hero-card">
+        <div class="hero-card-top">
+          <span class="brand-logo-wrap">
+            <img class="brand-logo" src="assets/logo.png" alt="Logo do Sistema Bordezan">
+            <span class="brand-mark">B</span>
+          </span>
+          <span class="eyebrow">PANIFICADORA BORDEZAN</span>
+        </div>
+        <h2>Informações centralizadas.</h2>
+        <p>Mais organização para as atividades do dia a dia.</p>
+        <div class="hero-tags"><span>Estoque</span><span>Produção</span><span>Encomendas</span><span>Cadastros</span></div>
+        <div class="hero-card-bottom"><span>Projeto de Engenharia de Software</span><span>2026</span></div>
+      </aside>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="section-heading"><span>01</span><div><p class="eyebrow">CONTEXTO</p><h2>Sobre o projeto</h2></div></div>
+      <div class="two-columns">
+        <article class="content-card">
+          <h3>O problema</h3>
+          <p>Parte dos processos administrativos e operacionais da empresa depende de controles manuais ou de ferramentas pouco integradas. Isso pode dificultar o acompanhamento de informações sobre estoque, produção, encomendas e fornecedores.</p>
+        </article>
+        <article class="content-card">
+          <h3>O objetivo</h3>
+          <p>Desenvolver uma aplicação web que centralize informações, facilite o controle das operações e contribua para a organização das atividades realizadas diariamente pelos colaboradores.</p>
+        </article>
+      </div>
+      <article class="content-card tech-card">
+        <div><h3>Tecnologias utilizadas</h3><p>Ferramentas escolhidas para o desenvolvimento da aplicação.</p></div>
+        <div class="tech-list"><span>Java 21</span><span>Spring Boot 3.5</span><span>React 19</span><span>TypeScript</span><span>PostgreSQL 17</span></div>
+      </article>
+      <article class="content-card architecture">
+        <h3>Arquitetura da solução</h3>
+        <p>O sistema é organizado em três partes principais: o front-end, responsável pela interface e interação com o usuário; o back-end, responsável pelas regras de negócio e pela comunicação com os dados; e o banco de dados, utilizado para armazenar as informações.</p>
+        <div class="architecture-flow"><span>Front-end<br><small>React</small></span><b>↔</b><span>Back-end<br><small>Spring Boot</small></span><b>↔</b><span>Banco de dados<br><small>PostgreSQL</small></span></div>
+      </article>
+    </section>
+
+    <section class="section" id="casos">
+      <div class="section-heading"><span>02</span><div><p class="eyebrow">FUNCIONALIDADES</p><h2>Casos de uso e cronograma</h2></div></div>
+      <p class="section-intro">Abaixo estão os casos de uso previstos para o Sistema Bordezan, com seus respectivos atores e objetivos.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Nome do caso de uso</th><th>Ator</th><th>Descrição</th></tr></thead>
+          <tbody>
+            <tr><td>Gerenciar Estoque</td><td>Gerente</td><td>Controlar as informações relacionadas ao estoque da empresa.</td></tr>
+            <tr><td>Gerenciar Encomendas</td><td>Gerente</td><td>Acompanhar e gerenciar as encomendas registradas no sistema.</td></tr>
+            <tr><td>Gerenciar Produto</td><td>Gerente</td><td>Gerenciar os produtos comercializados pela empresa.</td></tr>
+            <tr><td>Gerenciar Matérias-Primas</td><td>Gerente</td><td>Gerenciar as matérias-primas utilizadas para produção.</td></tr>
+            <tr><td>Gerenciar Fichas Técnicas</td><td>Gerente</td><td>Gerenciar as fichas técnicas utilizadas na produção.</td></tr>
+            <tr><td>Gerenciar Fornecedores</td><td>Gerente</td><td>Controlar as informações dos fornecedores da empresa.</td></tr>
+            <tr><td>Visualizar Relatórios de Produção</td><td>Gerente</td><td>Visualizar relatórios relacionados à produção.</td></tr>
+            <tr><td>Registrar Encomenda</td><td>Atendente</td><td>Registrar encomendas realizadas pelos clientes.</td></tr>
+            <tr><td>Visualizar Encomendas</td><td>Atendente e Funcionário da Cozinha</td><td>Consultar as encomendas registradas no sistema.</td></tr>
+            <tr><td>Registrar Produção Realizada</td><td>Funcionário da Cozinha</td><td>Registrar a produção realizada.</td></tr>
+            <tr><td>Consultar Ficha Técnica</td><td>Funcionário da Cozinha</td><td>Consultar as fichas técnicas dos produtos.</td></tr>
+            <tr><td>Gerenciar Usuários</td><td>Administrador</td><td>Gerenciar os usuários do sistema.</td></tr>
+            <tr><td>Consultar Logs do Sistema</td><td>Administrador</td><td>Consultar os registros de atividades do sistema.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subheading"><h3>Cronograma de desenvolvimento</h3></div>
+      <div class="table-wrap">
+        <table class="schedule-table">
+          <thead><tr><th>Caso de uso</th><th>Conclusão / previsão</th><th>Situação</th></tr></thead>
+            <tbody>
+                <tr><td>Gerenciar Fornecedores</td><td>26/06/2026</td><td><span class="status concluido">Concluído</span></td></tr>
+                <tr><td>Gerenciar Produto</td><td>26/08/2026</td><td><span class="status concluido">Concluído</span></td></tr>
+                <tr><td>Gerenciar Matérias-Primas</td><td>18/09/2026</td><td><span class="status concluido">Concluído</span></td></tr>
+                <tr><td>Gerenciar Fichas Técnicas</td><td>10/11/2026</td><td><span class="status concluido">Concluído</span></td></tr>
+                <tr><td>Consultar Ficha Técnica</td><td>15/11/2026</td><td><span class="status concluido">Concluído</span></td></tr>
+                <tr><td>Gerenciar Estoque</td><td>25/11/2026</td><td><span class="status desenvolvimento">Em desenvolvimento</span></td></tr>
+                <tr><td>Registrar Produção Realizada</td><td>02/12/2026</td><td><span class="status desenvolvimento">Em desenvolvimento</span></td></tr>
+                <tr><td>Registrar Encomenda</td><td>09/12/2026</td><td><span class="status desenvolvimento">Em desenvolvimento</span></td></tr>
+                <tr><td>Visualizar Encomendas</td><td>12/12/2026</td><td><span class="status desenvolvimento">Em desenvolvimento</span></td></tr>
+                <tr><td>Gerenciar Encomendas</td><td>16/12/2026</td><td><span class="status desenvolvimento">Em desenvolvimento</span></td></tr>
+                <tr><td>Gerenciar Usuários</td><td>22/12/2026</td><td><span class="status desenvolvimento">Em desenvolvimento</span></td></tr>
+                <tr><td>Visualizar Relatórios de Produção</td><td>05/01/2027</td><td><span class="status desenvolvimento">Em desenvolvimento</span></td></tr>
+                <tr><td>Consultar Logs do Sistema</td><td>07/01/2027</td><td><span class="status desenvolvimento">Em desenvolvimento</span></td></tr>
+            </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" id="documentacao">
+      <div class="section-heading"><span>03</span><div><p class="eyebrow">MODELAGEM</p><h2>Documentação</h2></div></div>
+      <div class="doc-grid">
+        <a class="doc-card" href="assets/diagramas/diagrama-caso-de-uso.pdf"><span>PDF</span><strong>Diagrama de Caso de Uso</strong><small>Abrir diagrama ↗</small></a>
+        <a class="doc-card" href="assets/diagramas/diagrama-der.pdf"><span>PDF</span><strong>Diagrama de Entidade e Relacionamento</strong><small>Abrir diagrama ↗</small></a>
+        <a class="doc-card" href="assets/diagramas/diagrama-de-classes.pdf"><span>PDF</span><strong>Diagrama de Classes</strong><small>Abrir diagrama ↗</small></a>
+        <a class="doc-card" href="assets/diagramas/diagrama-implantacao.pdf"><span>PDF</span><strong>Diagrama de Implantação</strong><small>Abrir diagrama ↗</small></a>
+        <a class="doc-card" href="assets/diagramas/sequencia-fornecedores.pdf"><span>PDF</span><strong>Sequência — Fornecedores</strong><small>Abrir diagrama ↗</small></a>
+        <a class="doc-card" href="assets/diagramas/sequencia-produtos.pdf"><span>PDF</span><strong>Sequência — Produtos</strong><small>Abrir diagrama ↗</small></a>
+        <a class="doc-card" href="assets/diagramas/sequencia-fichas-tecnicas.pdf"><span>PDF</span><strong>Sequência — Fichas Técnicas</strong><small>Abrir diagrama ↗</small></a>
+        <a class="doc-card" href="assets/diagramas/sequencia-materias-primas.pdf"><span>PDF</span><strong>Sequência — Matérias-Primas</strong><small>Abrir diagrama ↗</small></a>
+        <a class="doc-card" href="assets/diagramas/estado-fornecedores.pdf"><span>PDF</span><strong>Estado — Fornecedores</strong><small>Abrir diagrama ↗</small></a>
+        <a class="doc-card" href="assets/diagramas/estado-produtos.pdf"><span>PDF</span><strong>Estado — Produtos</strong><small>Abrir diagrama ↗</small></a>
+        <a class="doc-card" href="assets/diagramas/estado-fichas-tecnicas.pdf"><span>PDF</span><strong>Estado — Fichas Técnicas</strong><small>Abrir diagrama ↗</small></a>
+        <a class="doc-card" href="assets/diagramas/estado-materias-primas.pdf"><span>PDF</span><strong>Estado — Matérias-Primas</strong><small>Abrir diagrama ↗</small></a>
+        <a class="doc-card" href="assets/diagramas/workflow-encomenda-producao.pdf"><span>PDF</span><strong>Workflow As-Is — Encomenda e Produção</strong><small>Abrir diagrama ↗</small></a>
+        <a class="doc-card" href="assets/diagramas/workflow-estoque.pdf"><span>PDF</span><strong>Workflow As-Is — Estoque</strong><small>Abrir diagrama ↗</small></a>
+      </div>
+    </section>
+
+    <section class="section" id="evidencias">
+      <div class="section-heading"><span>04</span><div><p class="eyebrow">IMPLEMENTAÇÃO</p><h2>Telas e vídeo</h2></div></div>
+      <div class="screens-grid">
+        <figure class="screen-card"><img src="assets/telas/login.png" alt="Tela de login"><figcaption>Tela de Login</figcaption></figure>
+        <figure class="screen-card"><img src="assets/telas/dashboard.png" alt="Tela de dashboard"><figcaption>Dashboard</figcaption></figure>
+        <figure class="screen-card"><img src="assets/telas/producao.png" alt="Tela de produção"><figcaption>Produção</figcaption></figure>
+        <figure class="screen-card"><img src="assets/telas/fichas-tecnicas.png" alt="Tela de fichas técnicas"><figcaption>Fichas Técnicas</figcaption></figure>
+        <figure class="screen-card"><img src="assets/telas/materias-primas.png" alt="Tela de matérias-primas"><figcaption>Matérias-Primas</figcaption></figure>
+        <figure class="screen-card"><img src="assets/telas/produtos.png" alt="Tela de produtos"><figcaption>Produtos</figcaption></figure>
+        <figure class="screen-card"><img src="assets/telas/encomendas.png" alt="Tela de encomendas"><figcaption>Encomendas</figcaption></figure>
+        <figure class="screen-card"><img src="assets/telas/fornecedores.png" alt="Tela de fornecedores"><figcaption>Fornecedores</figcaption></figure>
+        <figure class="screen-card"><img src="assets/telas/relatorios.png" alt="Tela de relatórios"><figcaption>Relatórios</figcaption></figure>
+      </div>
+      <div class="video-card">
+        <div><h3>Demonstração do sistema</h3><p>Apenas funcionalidades prontas.</p></div>
+        <div class="video-placeholder">O vídeo de demonstração será exibido aqui quando você adicionar <code>assets/video/apresentacao.mp4</code>.</div><video controls preload="metadata" hidden><source src="assets/video/apresentacao.mp4" type="video/mp4">Seu navegador não suporta vídeo HTML5.</video>
+      </div>
+    </section>
+
+    <section class="section" id="relatorio">
+      <div class="section-heading"><span>05</span><div><p class="eyebrow">DOCUMENTO</p><h2>Relatório de estágio</h2></div></div>
+      <div class="report-card">
+        <div class="file-icon">PDF</div>
+        <div><h3>Relatório de Estágio — Sistema Bordezan</h3><p></p></div>
+        <a class="button button-small" href="assets/docs/relatorio-de-estagio.pdf">Abrir relatório ↗</a>
+      </div>
+    </section>
+
+    <section class="section" id="identificacao">
+      <div class="section-heading"><span>06</span><div><p class="eyebrow">AUTORIA</p><h2>Identificação do aluno</h2></div></div>
+      <div class="student-card">
+        <div><small>ALUNO</small><strong>Luiz Carlos Bordezan Neto</strong></div>
+        <div><small>MATRÍCULA</small><strong>243072016</strong></div>
+        <div><small>PROFESSOR ORIENTADOR</small><strong>Fernando Nakagawa</strong></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Portfólio de Estágio · Sistema Bordezan · 2026</span>
+    <a href="https://github.com/NetoBordezan/SistemaBordezan" target="_blank" rel="noreferrer">Repositório no GitHub ↗</a>
+  </footer>
+
+  <dialog class="image-viewer" aria-label="Visualização da imagem">
+    <button class="viewer-close" aria-label="Fechar">×</button>
+    <img src="" alt="">
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
